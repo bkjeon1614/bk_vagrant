@@ -3,12 +3,12 @@ vagrant development environment construct
 
 
 ## 2017-02-14
-- [] php5.5.9 update
-- [] php7.x.x update
+- [X] php5.5.9 update
+- [ ] php7.x.x update
 
 
 Type | VM Spec | Data Shared
------------- | ------------- 
+------------ | ------------- | -------------
 php | default | /var/www/html/data
 php | default | /var/www/html/data
 
