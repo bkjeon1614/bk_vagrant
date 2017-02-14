@@ -35,10 +35,12 @@ php | default | /var/www/html/data
 3. vagrantfile config
    - vagrantfile 수정 config.vm.box에 box파일이름으로 수정
      ```
-     ex) config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
-         # port forward
+     Exmaple
+         - box name
+         config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
+         - port forward
          config.vm.network "forwarded_port", guest: 80, host: 8080
-         # network adapter
+         - network adapter
          config.vm.network "private_network", ip: "192.168.33.10" 
      ```         
 
