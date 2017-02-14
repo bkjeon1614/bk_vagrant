@@ -47,7 +47,7 @@ Exmaple
 ```
    - vagrantfile 수정 config.vm.box에 box파일이름으로 수정  
 
-4. vagrant up // vagrant start
+4. vagrant reload // vagrant start
 
 5. individual setting
 
