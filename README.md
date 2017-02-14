@@ -7,14 +7,30 @@ vagrant development environment construct
 - [] php7.x.x update
 
 
-Type | VM Spec | Data Shared | Install Modules
------------- | ------------- | ------------- 
-php | default | /var/www/html/data | gd, curl, redis
-php | default | /var/www/html/data | -
+Type | VM Spec | Data Shared
+------------ | ------------- 
+php | default | /var/www/html/data
+php | default | /var/www/html/data
 
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
+
+
+> Update Logs
+> - 2017-02-14 1.0.0 Version PHP 5.X.X
+
+
 
 ```
-TEST
+Install Modules (PHP 5.X.X)
+
+# GD Install
+sudo apt-get install php5-gd
+
+# CURL Install
+sudo apt-get install php5-curl
+
+# Redis Install
+sudo add-apt-repository -y ppa:rwky/redis
+sudo apt-get update
+sudo add-apt-repository -y ppa:rwky/redis // OR sudo apt-get install python-software-properties
+
 ```
