@@ -3,8 +3,8 @@ vagrant development environment construct
 
 
 ## 2017-02-14
-- [x] php5.5.9 update
-- [x] php7.x.x update
+- [] php5.5.9 update
+- [] php7.x.x update
 
 
 Type | VM Spec | Data Shared | Install Modules
