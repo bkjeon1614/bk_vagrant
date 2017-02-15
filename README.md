@@ -18,7 +18,7 @@ php | default | /var/www/html/data
 > - 2017-02-14 1.0.0 Version PHP 5.X.X
 
 
-### WINDOWS 환경 [ windows7 ]
+### WINDOWS 환경 [ windows ]
 
 1. file download
    - virtualBox install( https://www.virtualbox.org/ )
@@ -55,7 +55,7 @@ Exmaple
 
 
 ```
-Install Modules (PHP 5.X.X)
+Install Modules (PHP 5.X.X) [script 대체예정]
 
 # apt-get
 apt-get update
