@@ -3,8 +3,8 @@ vagrant development environment construct
 
 
 ## 2017-02-14
-- [X] php5.5.9 update
-- [ ] php7.x.x update
+- [X] php5 update
+- [ ] php7 update
 
 
 Type | VM Spec | Data Shared
@@ -15,7 +15,7 @@ php | default | /var/www/html/data
 
 
 > Update Logs
-> - 2017-02-14 1.0.0 Version PHP 5.X.X
+> - 2017-02-14 1.0.0 Version PHP5
 
 
 ### WINDOWS 환경 [ windows ]
@@ -49,7 +49,7 @@ Exmaple
 ```
    - vagrantfile 수정 config.vm.box에 box파일이름으로 수정  
 
-4. vagrant reload // vagrant start
+4. vagrant reload 
 
 5. individual setting
 
