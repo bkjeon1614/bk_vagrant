@@ -44,6 +44,8 @@ Exmaple
    config.vm.network "forwarded_port", guest: 80, host: 8080
    # network adapter
    config.vm.network "private_network", ip: "192.168.33.10" 
+   # shared folder
+   config.vm.synced_folder "..", "/var/www/html/data"
 ```
    - vagrantfile 수정 config.vm.box에 box파일이름으로 수정  
 
