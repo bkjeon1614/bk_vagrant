@@ -25,7 +25,7 @@ php | default | /var/www/html/data
    - vagrant install( https://www.vagrantup.com/ )
 
 2. vagrant setting
-   - 원하는 box를 는다( ex-우분투 14.04 패키지 사용 trusty-server-cloudimg-amd64-vagrant-disk1.box )
+   - 원하는 box를 는다( ex-우분투 14.04 사용 trusty-server-cloudimg-amd64-vagrant-disk1.box )
    - https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
    - 로컬 개발환경을 구축할 경로에 저장한다
    - vagrant box add my-box D:\data\workphp5\trusty-server-cloudimg-amd64-vagrant-disk1.box // 원하는 box를 다운받아 윈도우 커맨드에 입력한다. 
