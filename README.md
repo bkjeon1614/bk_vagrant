@@ -9,8 +9,8 @@ vagrant development environment construct
 
 Type | VM Spec | Data Shared
 ------------ | ------------- | -------------
-php | default | /var/www/html/data
-php | default | /var/www/html/data
+php5 | memory:1024, cpus:1 | /var/www/html/data
+php7 | memory:1024, cpus:1 | /var/www/html/data
 
 
 
