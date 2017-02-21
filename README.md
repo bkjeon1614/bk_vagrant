@@ -65,7 +65,7 @@ Exmaple
 
 
 ```
-Install Modules (PHP 5.X.X) [script 대체예정]
+Install Modules (PHP 5.X.X) [TODO : script 대체예정]
 
 # apt-get
 apt-get update
