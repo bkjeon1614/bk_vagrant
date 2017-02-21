@@ -61,8 +61,17 @@ Exmaple
 
 4. vagrant reload 
 
-5. individual setting
-
+5. vagrant instruction
+   (1) workspace root move
+   (2) vagrant instruction action
+       - vagrant up ( vagrant start )
+       - vagrant halt ( vagrant halt )
+       - vagrant reload ( vagrant reload )
+   (3) vagrant up check -> vm
+       ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+   
+  
+6. individual setting
 
 ```
 Install Modules (PHP 5.X.X) [TODO : script 대체예정]
