@@ -40,10 +40,20 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
 Exmaple
    # box name
    config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
+   
    # port forward
    config.vm.network "forwarded_port", guest: 80, host: 8080
+   
    # network adapter
    config.vm.network "private_network", ip: "192.168.33.10" 
+   
+   # VM configure
+   config.vm.provider "virtualbox" do |vb|
+       vb.name = "bk_vagrant"
+       vb.customize ["modifyvm", :id, "--memory", 1024]
+       vb.customize ["modifyvm", :id, "--cpus", 1]
+   end   
+   
    # shared folder
    config.vm.synced_folder "..", "/var/www/html/data"
 ```
