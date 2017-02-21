@@ -68,7 +68,7 @@ Exmaple
        - vagrant halt ( vagrant halt )
        - vagrant reload ( vagrant reload )
    (3) vagrant up check -> vm
-       ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+       ![Image of Yaktocat](https://github.com/bkjeon1614/bk_vagrant/vm.png)
    
   
 6. individual setting
