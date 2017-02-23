@@ -24,23 +24,22 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
    - virtualBox install( https://www.virtualbox.org/ )
    - vagrant install( https://www.vagrantup.com/ )
 
-2. vagrant setting
-   - 원하는 box를 는다( ex-우분투 14.04 사용 trusty-server-cloudimg-amd64-vagrant-disk1.box )
-   - https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
-   - 로컬 개발환경을 구축할 경로에 저장한다
-   - vagrant box add my-box D:\data\workphp5\trusty-server-cloudimg-amd64-vagrant-disk1.box // 원하는 box를 다운받아 윈도우 커맨드에 입력한다. 
-   - cd 개발환경을 구축할 경로
-   - vagrant init my-box
-   - vagrant up ( or config.vm.provision add -> vagrant up --provision )
-
+2. vagrant setting 
+   - 원하는 box를 로컬 개발환경을 구축할 경로에 저장한다( 해당 버전은 vagrant실행시 사이트에서 자동으로 다운받을 수 있게끔 설정해놓음 )
+     (1) 원하는 box를 설치할 경우 
+         - vagrant box add my-box D:\data\workphp5\trusty-server-cloudimg-amd64-vagrant-disk1.box // 원하는 box를 개발환경을 구축할 경로에 다운받아 윈도우 커맨드에 입력한다. 
+         - 개발환경을 구축할 경로로 이동
+         - vagrant init my-box
+         - vagrant up --provision
+     (2) bk_vagrant에 설정된 박스로 실행할 경우
+         - vagrant up --provision
 
 3. vagrantfile config
-   - vagrantfile 수정 config.vm.box에 box파일이름으로 수정
 ```
 Exmaple
-   # box name
-   config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
-   
+   # box name
+   config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"  // 2-(1)일 경우에만 박스경로로 변경해주면 된다.
+   
    # box provision ( add option -> vagrant start(=> vagrant up --provision) ) 
    config.vm.provision "shell", path: "./bin/init.sh" 
    
@@ -60,7 +59,6 @@ Exmaple
    # shared folder
    config.vm.synced_folder "..", "/var/www/html/data"
 ```
-   - vagrantfile 수정 config.vm.box에 box파일이름으로 수정  
 
 4. vagrant reload 
 
