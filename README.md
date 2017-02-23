@@ -2,11 +2,11 @@
 vagrant development environment construct
 
 
-## 2017-02-14
+## LIST
 - [X] php5 update
 - [ ] php7 update
 
-
+## Setting Info
 Type | VM Spec | Data Shared
 ------------ | ------------- | -------------
 php5 | memory:1024, cpus:1 | /var/www/html/data
@@ -40,6 +40,9 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
 Exmaple
    # box name
    config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
+   
+   # box provision ( add option -> vagrant start(=> vagrant up --provision) ) 
+   config.vm.provision "shell", path: "./bin/init.sh" 
    
    # port forward
    config.vm.network "forwarded_port", guest: 80, host: 8080
