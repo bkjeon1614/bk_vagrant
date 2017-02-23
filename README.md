@@ -26,7 +26,7 @@ php7 | memory:1024, cpus:1 | /var/www/html/data | - |
    
 ### bk_vagrant git clone or download
    
-### Vagrant up --provision [ workspace root ]
+### vagrant up --provision command input [ workspace root ]
 
 Vagrant Instruction
 * workspace root move
