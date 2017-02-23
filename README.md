@@ -31,22 +31,11 @@ php7 | memory:1024, cpus:1 | /var/www/html/data | - |
 Vagrant Instruction
 * workspace root move
 * vagrant instruction action
+  - vagrant up ( vagrant start ) or config.vm.provision add -> vagrant up --provision
+  - vagrant halt ( vagrant halt )
+  - vagrant reload ( vagrant reload )
+  - vagrant box list ( vagrant box list )
+  - vagrant box remove {vagrant name}
 * vagrant up check -> vm
+
 ![Image of Yaktocat](http://bkjeon1614.vps.phps.kr/bkjeon/uploads/cache/post/2017/02/thumb-994f09ae65ffed35f3690f4c33b080d0_600x0.png)
-
-
-
-
-
-
-
-Vagrant Instruction
-    * workspace root move
-    * vagrant instruction action
-        - vagrant up ( vagrant start ) or config.vm.provision add -> vagrant up --provision
-        - vagrant halt ( vagrant halt )
-        - vagrant reload ( vagrant reload )
-        - vagrant box list ( vagrant box list )
-        - vagrant box remove {vagrant name}
-    * vagrant up check -> vm
-       ![Image of Yaktocat](http://bkjeon1614.vps.phps.kr/bkjeon/uploads/cache/post/2017/02/thumb-994f09ae65ffed35f3690f4c33b080d0_600x0.png)
