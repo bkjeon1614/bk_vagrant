@@ -25,20 +25,8 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
    * vagrant install( https://www.vagrantup.com/ )
    
 ### bk_vagrant git clone or download
-
-### vagrant setting 
-```
-   1. 원하는 box를 설치할 경우 
-      - vagrant box add my-box {box root}\{box name}.box // 원하는 box를 개발환경을 구축할 경로에 다운받아 윈도우 커맨드에 입력한다. 
-      - 개발환경을 구축할 경로로 이동
-      - vagrant init my-box
-      - vagrant up --provision
-   2. bk_vagrant에 설정된 박스로 실행할 경우
-      - vagrant box add bk_vagrant https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
-      - vagrant up --provision
-```
    
-### vagrant up --provision
+### vagrant up --provision [ workspace root ]
 
 ### vagrant instruction
     (1) workspace root move
