@@ -23,6 +23,8 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
 ### file download
    * virtualBox install( https://www.virtualbox.org/ )
    * vagrant install( https://www.vagrantup.com/ )
+   
+### bk_vagrant git clone or download
 
 ### vagrant setting 
 ```
