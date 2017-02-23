@@ -18,6 +18,12 @@ echo "Install apache2.."
 echo "**************************"
 sudo apt-get -y install apache2
 
+# php5
+echo "**************************"
+echo "Install php.."
+echo "**************************"
+sudo apt-get -y install php5-common php5 libapache2-mod-php5
+
 # GD
 echo "**************************"
 echo "Install gd.."
@@ -43,10 +49,14 @@ sudo apt-get -y install php5-redis
 sudo apt-get -y install php5-mcrypt
 sudo php5enmod mcrypt
 
+# php config setting
+echo "**************************"
+echo "php config setting.."
+echo "**************************"
 short_open_tag = On
-sed "s/short\_open\_tag\ \=\ Off/short\_open\_tag\ \=\ On/g" /etc/php.ini > php.ini
-yes | mv php.ini /etc/php.ini
+sed "s/short\_open\_tag\ \=\ Off/short\_open\_tag\ \=\ On/g" /etc/php5/apache2/php.ini > php.ini
+yes | mv php.ini /etc/php5/apache2/php.ini
 
 date.timezone = Asia/Seoul
-sed "s/\;date\.timezone\ \=/date\.timezone\ \=\ Asia\/Seoul/g" /etc/php.ini > php.ini
-yes | mv php.ini /etc/php.ini
+sed "s/\;date\.timezone\ \=/date\.timezone\ \=\ Asia\/Seoul/g" /etc/php5/apache2/php.ini > php.ini
+yes | mv php.ini /etc/php5/apache2/php.ini
