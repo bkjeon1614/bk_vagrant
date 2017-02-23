@@ -28,6 +28,10 @@ php7 | memory:1024, cpus:1 | /var/www/html/data | - |
    
 ### "vagrant up --provision" command input [ workspace root ]
 
+Vagrant Account
+* user : vagrant / vagrant
+* root : root / vagrant
+
 Vagrant Instruction
 * workspace root move
 * vagrant instruction action
