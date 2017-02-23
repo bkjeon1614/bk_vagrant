@@ -7,6 +7,7 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   # box name
+  config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.box = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.provision "shell", path: "init.sh"
   
