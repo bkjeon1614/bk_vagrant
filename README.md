@@ -31,7 +31,7 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
    - vagrant box add my-box D:\data\workphp5\trusty-server-cloudimg-amd64-vagrant-disk1.box // 원하는 box를 다운받아 윈도우 커맨드에 입력한다. 
    - cd 개발환경을 구축할 경로
    - vagrant init my-box
-   - vagrant up
+   - vagrant up ( or config.vm.provision add -> vagrant up --provision )
 
 
 3. vagrantfile config
@@ -64,40 +64,8 @@ Exmaple
 5. vagrant instruction
    (1) workspace root move
    (2) vagrant instruction action
-       - vagrant up ( vagrant start )
+       - vagrant up ( vagrant start ) or config.vm.provision add -> vagrant up --provision
        - vagrant halt ( vagrant halt )
        - vagrant reload ( vagrant reload )
    (3) vagrant up check -> vm
        ![Image of Yaktocat](http://bkjeon1614.vps.phps.kr/bkjeon/uploads/cache/post/2017/02/thumb-994f09ae65ffed35f3690f4c33b080d0_600x0.png)
-   
-  
-6. individual setting
-
-```
-Install Modules (PHP 5.X.X) [TODO : script 대체예정]
-
-# apt-get
-apt-get update
-apt-get upgrade
-
-# APACHE2
-apt-get install apache2
-
-# GD
-sudo apt-get install php5-gd
-
-# CURL
-sudo apt-get install php5-curl
-
-# Redis
-sudo add-apt-repository -y ppa:rwky/redis
-sudo apt-get update
-sudo add-apt-repository -y ppa:rwky/redis // OR sudo apt-get install python-software-properties
-sudo apt-get install redis-server
-apt-get install php5-redis
-
-# PHP5 Mcrypt
-sudo apt-get install php5-mcrypt
-sudo php5enmod mcrypt
-
-```
