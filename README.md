@@ -4,3 +4,7 @@ vagrant development environment construct
 ## LIST
 - [X] php5
 - [ ] php7
+
+### File Download
+   * virtualBox install( https://www.virtualbox.org/ )
+   * vagrant install( https://www.vagrantup.com/ )
