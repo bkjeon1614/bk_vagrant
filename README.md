@@ -1,4 +1,4 @@
-# bk_vagrant
+# bk_vagrant [ img, script 폴더 생성 예정 ]
 vagrant development environment construct
 
 
