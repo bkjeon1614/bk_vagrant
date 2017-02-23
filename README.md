@@ -35,7 +35,7 @@ Vagrant Instruction
   - vagrant halt ( vagrant halt )
   - vagrant reload ( vagrant reload )
   - vagrant box list ( vagrant box list )
-  - vagrant box remove {vagrant name}
+  - vagrant box remove {vagrant name} ( vagrant box remove )
 * vagrant up check -> vm
 
 ![Image of Yaktocat](http://bkjeon1614.vps.phps.kr/bkjeon/uploads/cache/post/2017/02/thumb-994f09ae65ffed35f3690f4c33b080d0_600x0.png)
