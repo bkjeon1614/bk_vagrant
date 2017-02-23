@@ -18,7 +18,7 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
 > - 2017-02-14 1.0.0 Version PHP5
 
 
-## WINDOWS 환경 [ windows ]
+## WINDOWS
 
 ### file download
    * virtualBox install( https://www.virtualbox.org/ )
