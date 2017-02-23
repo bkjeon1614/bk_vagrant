@@ -7,10 +7,10 @@ vagrant development environment construct
 - [ ] php7 update
 
 ## Setting Info
-Type | VM Spec | Data Shared
------------- | ------------- | -------------
-php5 | memory:1024, cpus:1 | /var/www/html/data
-php7 | memory:1024, cpus:1 | /var/www/html/data
+Type | VM Spec | Data Shared | spec | php.ini setting
+------------ | ------------- | ------------- | ------------- | -------------
+php5 | memory:1024, cpus:1 | /var/www/html/data | apache2, php5, php gd, curl, redis, php mcrypt | short_open_tag=on, timezone=Asia/Seoul
+php7 | memory:1024, cpus:1 | /var/www/html/data | - | 
 
 
 
