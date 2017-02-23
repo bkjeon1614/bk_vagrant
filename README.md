@@ -32,6 +32,7 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
          - vagrant init my-box
          - vagrant up --provision
      (2) bk_vagrant에 설정된 박스로 실행할 경우
+         - vagrant box add bk_vagrant https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
          - vagrant up --provision
 
 3. vagrantfile config
