@@ -36,32 +36,6 @@ php7 | memory:1024, cpus:1 | /var/www/html/data
       - vagrant up --provision
 ```
    
-### vagrantfile config
-```
-Exmaple
-   # box name
-   config.vm.box = "trusty-server-cloudimg-amd64-vagrant-disk1.box"  // 2-(1)일 경우에만 박스경로로 변경해주면 된다.
-   
-   # box provision ( add option -> vagrant start(=> vagrant up --provision) ) 
-   config.vm.provision "shell", path: "./bin/init.sh" 
-   
-   # port forward
-   config.vm.network "forwarded_port", guest: 80, host: 8080
-   
-   # network adapter
-   config.vm.network "private_network", ip: "192.168.33.10" 
-   
-   # VM configure
-   config.vm.provider "virtualbox" do |vb|
-       vb.name = "bk_vagrant"
-       vb.customize ["modifyvm", :id, "--memory", 1024]
-       vb.customize ["modifyvm", :id, "--cpus", 1]
-   end   
-   
-   # shared folder
-   config.vm.synced_folder "..", "/var/www/html/data"
-```
-
 ### vagrant up --provision
 
 ### vagrant instruction
@@ -70,5 +44,6 @@ Exmaple
         - vagrant up ( vagrant start ) or config.vm.provision add -> vagrant up --provision
         - vagrant halt ( vagrant halt )
         - vagrant reload ( vagrant reload )
+        - vagrant box list ( vagrant box list )
     (3) vagrant up check -> vm
        ![Image of Yaktocat](http://bkjeon1614.vps.phps.kr/bkjeon/uploads/cache/post/2017/02/thumb-994f09ae65ffed35f3690f4c33b080d0_600x0.png)
