@@ -1,9 +1,9 @@
-# bk_vagrant [ master branch readme 제외하고 모두 삭제예정]
+# bk_vagrant
 vagrant development environment construct
 
 ## LIST
 - [X] php5
-- [ ] php7
+- [X] php7
 
 ### Essential File Download
    * virtualBox install( https://www.virtualbox.org/ )
