@@ -9,8 +9,9 @@ vagrant development environment construct
   된다
   
 ## LIST
-- [X] php5
-- [X] php7
+- [X] php5(apache)
+- [X] php7(apache)
+- [X] php7(nginx)
 
 ### Essential File Download
    * virtualBox install( https://www.virtualbox.org/ )
