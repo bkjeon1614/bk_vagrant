@@ -12,6 +12,7 @@ vagrant development environment construct
 - [X] php5(apache)
 - [X] php7(apache)
 - [X] ubuntu16.04
+- [X] ubuntu16.04_php7.1_apache
 
 ### Essential File Download
    * virtualBox install( https://www.virtualbox.org/ )
