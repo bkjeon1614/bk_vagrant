@@ -8,12 +8,16 @@ vagrant development environment construct
   가장 큰 이유는 각 개발자간 일치하지 않는 작업 환경을 동일하게 구성하여 일관성을 유지하고 환경 구성으로 인한 작업 시간을 최소화 하기 위해서 사용이
   된다
   
-## LIST
-- [X] php5(apache)
-- [X] php7(apache)
-- [X] ubuntu16.04
-- [X] ubuntu16.04_php7.1_apache
+## Essential File Download
+- virtualBox install( https://www.virtualbox.org/ )
+- vagrant install( https://www.vagrantup.com/ )
 
-### Essential File Download
-   * virtualBox install( https://www.virtualbox.org/ )
-   * vagrant install( https://www.vagrantup.com/ )
+## LIST
+- PHP
+  - php5(apache)
+  - php7(apache)
+  - ubuntu16.04_php7.1_apache
+- OS
+  - ubuntu16.04
+
+
