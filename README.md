@@ -14,10 +14,9 @@ vagrant development environment construct
 
 ## LIST
 - PHP
-  - php5(apache)
-  - php7(apache)
-  - ubuntu16.04_php7.1_apache
+  - [php5(apache)](https://github.com/bkjeon1614/bk_vagrant/tree/master/php/php5_apache)
+  - [php7(apache)](https://github.com/bkjeon1614/bk_vagrant/tree/master/php/php7_apache)
+  - [ubuntu16.04_php7.1_apache](https://github.com/bkjeon1614/bk_vagrant/tree/master/php/ubuntu16.04_php7.1_apache)
 - OS
-  - ubuntu16.04
-
+  - [ubuntu16.04](https://github.com/bkjeon1614/bk_vagrant/tree/master/os/ubuntu16.04)
 
