@@ -14,7 +14,7 @@ vagrant development environment construct
 
 ## LIST
 - Kubernetes
-  - [kubernetes](https://github.com/bkjeon1614/bk_vagrant/tree/master/kubernetes/init/)
+  - [kubernetes](https://github.com/bkjeon1614/bk_vagrant/tree/master/kubernetes)
 - PHP
   - [php5(apache)](https://github.com/bkjeon1614/bk_vagrant/tree/master/php/php5_apache)
   - [php7(apache)](https://github.com/bkjeon1614/bk_vagrant/tree/master/php/php7_apache)
