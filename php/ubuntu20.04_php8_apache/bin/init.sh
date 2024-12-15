@@ -31,13 +31,7 @@ php -v
 echo "**************************"
 echo "Install php-lib"
 echo "**************************"
-sudo apt-get -y install php-cli
-sudo apt-get -y install php-fpm
-sudo apt-get -y install php-mbstring
-sudo apt-get -y install php-xml
-sudo apt-get -y install php-intl
-sudo apt-get -y install php-sodium
-sudo apt-get -y install php-mysql
+sudo apt-get -y install php-cli php-fpm php-mbstring php-xml php-intl php-sodium php-mysql
 
 # composer
 echo "**************************"
@@ -65,6 +59,10 @@ sed "s/\;date\.timezone\ \=/date\.timezone\ \=\ Asia\/Seoul/g" /etc/php/8.3/apac
 yes | mv php.ini /etc/php/8.3/apache2/php.ini
 
 sudo a2enmod rewrite
-sudo service apache2 restart
 
 # apache setting
+echo "**************************"
+echo "apache config setting.."
+echo "**************************"
+sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/ec2|' /etc/apache2/sites-available/000-default.conf
+sudo service apache2 restart
