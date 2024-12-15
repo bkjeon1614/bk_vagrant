@@ -64,9 +64,9 @@ sudo a2enmod rewrite
 echo "**************************"
 echo "apache config setting.."
 echo "**************************"
-sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/ec2|' /etc/apache2/sites-available/000-default.conf
+sed -i 's|DocumentRoot /var/www/html|DocumentRoot /vagrant/ec2|' /etc/apache2/sites-available/000-default.conf
 bash -c 'cat <<EOT >> /etc/apache2/apache2.conf
-<Directory /var/www/html/ec2>
+<Directory /vagrant/ec2>
     Options Indexes FollowSymLinks
     AllowOverride All
     Allow from all

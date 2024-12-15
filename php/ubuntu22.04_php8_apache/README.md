@@ -1,4 +1,4 @@
-# bk_vagrant Ubuntu16.04
+# bk_vagrant Ubuntu22.04
 vagrant development environment construct
 
 ## Setting Info
@@ -18,8 +18,6 @@ ubuntu22.04, apache2, php8.3 | memory:1024, cpus:1 | curl, mcrypt, intl, xml, mb
    * vagrant install( https://www.vagrantup.com/ )
    
 ### bk_vagrant git clone or download
-
-### vagrant init bento/ubuntu-22.04 --box-version 202407.23.0 (기존 Vagrantfile -> Vagrantfile.bak 로 변경 후 명령실행 -> Vagrantfile 의 내용 복사하여 붙여넣기)
    
 ### "vagrant up --provision" command input [ workspace root ]  // Use --provision option only at first setting
 
@@ -69,6 +67,8 @@ Vagrant Instruction
 * vagrant up check -> vm
 
 ### 프로젝트 웹 루트 세팅 방법
-- vm 의 /vagrant 폴더와 현재 Vagrantfile 이 있는 폴더가 share 되어있다. Vagrantfile 이 위치한 경로에 원하는 웹서비스 폴더를 이동
-- vm 에 접속하여 apache 기본 세팅 웹 루트인 /var/www/html 로 이동
-  - 필요시 sudo vi /etc/apache2/sites-enabled/000-default.conf 에서 변경
+1. vm 의 /vagrant 폴더와 현재 Vagrantfile 이 있는 폴더가 share 되어있다. Vagrantfile 이 위치한 경로에 원하는 웹서비스 폴더를 이동
+
+### Issue
+- vagrant init bento/ubuntu-22.04 --box-version 202407.23.0 (기존 Vagrantfile -> Vagrantfile.bak 로 변경 후 명령실행 -> Vagrantfile 의 내용 복사하여 붙여넣기)
+  - 만약 그래도 box 가 변경되지 않으면 vagrant remove 명령으로 박스 삭제 후 다시 init 후 실행
