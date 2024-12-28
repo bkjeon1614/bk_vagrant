@@ -4,7 +4,7 @@ vagrant development environment construct
 ## Setting Info
 Type | VM Spec | Data Shared | modules | php.ini setting
 ------------ | ------------- | ------------- | ------------- | -------------
-ubuntu22.04, apache2, php8.3 | memory:1024, cpus:1 | curl, mcrypt, intl, xml, mbstring, mysql, redis, composer | short_open_tag=on, timezone=Asia/Seoul | 
+ubuntu22.04, apache2, php8.3 | memory:4096, cpus:2 | curl, mcrypt, intl, xml, mbstring, mysql, redis, composer | short_open_tag=on, timezone=Asia/Seoul | 
 
 
 > Update Logs
