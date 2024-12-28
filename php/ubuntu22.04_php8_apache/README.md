@@ -8,6 +8,7 @@ ubuntu22.04, apache2, php8.3 | memory:4096, cpus:2 | curl, mcrypt, intl, xml, mb
 
 
 > Update Logs
+> - 2024-12-28 1.0.1 bugfix (vagrant 공유 폴더 설정 값 변경)
 > - 2024-12-15 1.0.0 release
 
 
