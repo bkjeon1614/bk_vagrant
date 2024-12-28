@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/bk_vagrant/php/ubuntu22.04_php8_apache","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/vagrant":{"owner":"www-data","group":"www-data","guestpath":"/vagrant","hostpath":"C:/bk_vagrant/php/ubuntu22.04_php8_apache","disabled":false,"__vagrantfile":true}}}

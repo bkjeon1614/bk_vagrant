@@ -31,7 +31,7 @@ php -v
 echo "**************************"
 echo "Install php-lib"
 echo "**************************"
-sudo apt-get -y install php-cli php-fpm php-mbstring php-xml php-intl php-sodium php-mysql
+sudo apt-get -y install php-cli php-fpm php-mbstring php-xml php-intl php-sodium php-mysql php-curl
 
 # composer
 echo "**************************"
