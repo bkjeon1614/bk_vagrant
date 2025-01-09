@@ -75,4 +75,4 @@ Vagrant Instruction
   - 만약 그래도 box 가 변경되지 않으면 vagrant remove 명령으로 박스 삭제 후 다시 init 후 실행
     - vagrant box list
     - vagrant box remove {리스트에 표시된 삭제할 박스이름}
-    - vagrant up
+    - vagrant up --provision
