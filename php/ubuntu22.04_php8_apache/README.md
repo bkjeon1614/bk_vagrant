@@ -73,6 +73,5 @@ Vagrant Instruction
 ### Issue
 - vagrant init bento/ubuntu-22.04 --box-version 202407.23.0 (기존 Vagrantfile -> Vagrantfile.bak 로 변경 후 명령실행 -> Vagrantfile 의 내용 복사하여 붙여넣기)
   - 만약 그래도 box 가 변경되지 않으면 vagrant remove 명령으로 박스 삭제 후 다시 init 후 실행
-    - vagrant box list
-    - vagrant box remove {리스트에 표시된 삭제할 박스이름}
+    - 그래도 안되면 기존 vagrantfile 삭제 후 vagrant init (단, 기존 vagrantfile 의 내용을 그대로 복붙한다.)
     - vagrant up --provision
